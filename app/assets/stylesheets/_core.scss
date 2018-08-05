@@ -1,3 +1,5 @@
+$primary-color: #242386;
+
 form{
 	margin-bottom: 0;
 }
@@ -232,7 +234,8 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: SFProText-Medium;
+	// font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -286,15 +289,18 @@ html.home{
 }
 
 #refer .hero{
-	background: #F1F0EE;
-	height: 391px;
+	background: image-url("refer/joanday.png");
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	height: 491px;
 	overflow: hidden;
 }
 
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/mammoth.png") 0 0 no-repeat;
+	// background: image-url("refer/mammoth.png") 0 0 no-repeat;
 	background-size: 610px 394px;
 	overflow: hidden;
 	margin-top: 15px;
@@ -315,53 +321,63 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
-	text-align: center;
-	text-transform: uppercase;
+	width: 600px;
 	letter-spacing: .13em;
 	margin-right: 60px;
 }
 
 #refer .share-wrap .why{
+	/* Don’t leave your fri: */
+	margin-top: 103px;
 	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
-	margin-top: 42px;
+	color: #242386;
+	letter-spacing: -0.17px;
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
-	line-height: 40px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #074E6F;
-	margin-top: 18px;
-	letter-spacing: .13em;
+	/* Invite friends & ear: */
+	margin-top: 9px;
+	opacity: 0.87;
+	font-family: SFProDisplay-Bold;
+	font-size: 48px;
+	color: #242386;
+	text-align: left;
+	line-height: 50px;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
-	font-size: 14px;
-	text-transform: none;
+	/* Share your unique li: */
 	margin-top: 15px;
+	font-family: SFProText-Medium;
+	font-size: 16px;
+	color: #262587;
+	letter-spacing: -0.17px;
 }
 
 #refer .share-wrap .copy-link{
-	border: 1px solid #D1D0C7;
 	background: #FFF;
-	padding: 10px 0;
+	height: 45px;
 	width: 320px;
 	text-transform: none;
 	font-size: 11px;
-	margin: 20px auto 0;
+	margin-top: 15px;
 }
 
 #refer .share-wrap .social-links{
 	width: 120px;
 	height: 37px;
-	margin: 25px auto 0;
+	margin-top: 25px;
 	text-align: center;
+}
+
+#refer .share-text{
+	margin-top: 20px;
+	opacity: 0.87;
+	font-family: SFProText-Regular;
+	font-size: 12px;
+	color: #242386;
+	letter-spacing: 1px;
+	line-height: 16px;
 }
 
 #refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
@@ -401,12 +417,14 @@ html.home{
 }
 
 #refer .prizes .callout{
-	text-align: center;
+	opacity: 0.87;
+	font-family: SFProText-Bold;
 	font-size: 16px;
-	color: #074E6F;
-	font-weight: bold;
-	margin: 20px 0 0 0;
-	letter-spacing: 2px;
+	color: #242386;
+	letter-spacing: 1.33px;
+	text-align: center;
+	line-height: 16px;
+	margin: 40px 0 0 0;
 	text-transform: uppercase;
 }
 
@@ -540,7 +558,7 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
+	background: $primary-color;
 	border-color: #074E6F;
 }
 
@@ -631,7 +649,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .mammoth{
-		background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
+		// background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
 		background-size: 610px 394px;
 	}
 
