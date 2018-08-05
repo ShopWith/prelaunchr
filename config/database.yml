@@ -1,7 +1,9 @@
 development:
   adapter: postgresql
-  database: prelaunchr_development
+  database: postgres 
   host: localhost
+  user: postgres
+  password: test 
 test:
   adapter: postgresql
   database: prelaunchr_test
